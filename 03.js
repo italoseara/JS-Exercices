@@ -1,8 +1,8 @@
-// TODO: Set the variables as an empty array
+// Set the variables as an empty array
 var tips = new Array
 var payments = new Array
 
-// TODO: Create a function to calculate the tip
+// Create a function to calculate the tip
 function tipCalc(bill) {
     if (bill < 50) {
         var tip = 20/100;
@@ -16,10 +16,10 @@ function tipCalc(bill) {
     payments.push(bill + tip);
 }
 
-// TODO: Call the function to calculate the tip
+// Call the function to calculate the tip
 tipCalc(124);
 tipCalc(48);
 tipCalc(268);
 
-// TODO: Log into the console
+// Log into the console
 console.log(tips, payments);

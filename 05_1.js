@@ -1,4 +1,4 @@
-// TODO: Create a object with a method to calculate the tip
+// Create a object with a method to calculate the tip
 var tips = {
     bills: [124, 48, 268],
     tip: [],
@@ -18,8 +18,8 @@ var tips = {
     }
 }
 
-// TODO: Call the function to calculate the tip
+// Call the function to calculate the tip
 tips.tipCalc();
 
-// TODO: Print into the console
+// Print into the console
 console.log(tips.bills, tips.tip, tips.payments);
