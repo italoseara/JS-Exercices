@@ -22,7 +22,7 @@ if (averageJohn > averageMike && averageJohn > averageMary) {
     console.log('John and Mike drew with', averageJohn);
 
 } else if (averageMike === averageMary && averageMike != averageJohn) {
-    console.log('Mike and Mary drew with', averageMary);
+    console.log('Mike and Mary drew with', averageMary)
 
 } else {
     console.log('Both draw with', averageJohn);
