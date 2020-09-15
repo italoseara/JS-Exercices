@@ -4,7 +4,7 @@ var tips = {
     tip: [],
     payments: [],
     tipCalc: function () {
-        for (i = 0; i < this.bills.length; i++) {
+        for (var i = 0; i < this.bills.length; i++) {
             if (this.bill[i] < 50) {
                 var tip = 20/100;
             } else if (this.bill[i] <= 50 && this.bill[i] <= 200) {

@@ -4,7 +4,7 @@ var John = {
     tip: [],
     payments: [],
     tipCalc: function () {
-        for (i = 0; i < this.bill.length; i++) {
+        for (var i = 0; i < this.bill.length; i++) {
             if (this.bill[i] < 50) {
                 var tip = 20/100;
             } else if (this.bill[i] <= 50 && this.bill[i] <= 200) {
@@ -23,7 +23,7 @@ var Mark = {
     tip: [],
     payments: [],
     tipCalc: function () {
-        for (i = 0; i < this.bill.length; i++) {
+        for (var i = 0; i < this.bill.length; i++) {
             if (this.bill[i] < 100) {
                 var tip = 20/100;
             } else if (this.bill[i] <= 100 && this.bill[i] <= 300) {
@@ -40,7 +40,7 @@ var Mark = {
 // Function to calc the average of the tip
 function Average(array) {
     var sum = 0;
-    for (i = 0; i < array.length; i++) {
+    for (var i = 0; i < array.length; i++) {
         sum += array[i];
     }
     return sum / array.length
