@@ -2,16 +2,18 @@
 var tips = {
     tip: [],
     payments: [],
-    tipCalc: function tipCalc(bill) {
-        if (bill < 50) {
-            var tip = 20/100;
-        } else if (bill <= 50 && bill <= 200) {
-            var tip = 15/100;
-        } else {
-            var tip = 10/100;
+    tipCalc: function () {
+        for (i = 0; i < this.bills.length; i++) {
+            if (this.bill[i] < 50) {
+                var tip = 20/100;
+            } else if (this.bill[i] <= 50 && this.bill[i] <= 200) {
+                var tip = 15/100;
+            } else {
+                var tip = 10/100;
+            }
+            this.tip.push(this.bill[i] * tip);
+            this.payments.push((this.bill[i] * tip) + this.bill[i]);
         }
-        this.tip.push(bill * tip);
-        this.payments.push((bill * tip) + bill);
     }
 }
 
@@ -19,9 +21,8 @@ var tips = {
 tips.bills = [124, 48, 268];
 
 // TODO: Call the function to calculate the tip
-for (i = 0; i < tips.bills.length; i++) {
-    tips.tipCalc(tips.bills[i]);
-}
+tips.tipCalc();
+
 
 // TODO: Print into the console
 console.log(tips.bills, tips.tip, tips.payments);
