@@ -1,5 +1,6 @@
 // TODO: two objects (John and Mark) with a method to calculate the tip
 var John = {
+    bill: [124, 48, 268],
     tip: [],
     payments: [],
     tipCalc: function () {
@@ -18,6 +19,7 @@ var John = {
 }
 
 var Mark = {
+    bill: [77, 375, 110, 45],
     tip: [],
     payments: [],
     tipCalc: function () {
@@ -43,10 +45,6 @@ function Average(array) {
     }
     return sum / array.length
 }
-
-// TODO: set their bills
-John.bill = [124, 48, 268];
-Mark.bill = [77, 375, 110, 45];
 
 // TODO: Call the function to calculate their bills
 John.tipCalc();
